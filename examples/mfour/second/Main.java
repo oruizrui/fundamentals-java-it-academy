@@ -2,7 +2,7 @@ package examples.mfour.second;
 
 import java.util.Scanner; // import the Scanner class 
 
-class Main {
+public class Main {
     public static void main(String[] args) {
         Scanner myObj = new Scanner(System.in);
         int userAge = 0;
