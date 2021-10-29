@@ -14,6 +14,7 @@ class Main {
 
         System.out.println("Could you give me your age, please?");
         userAge = myObj.nextLine();
+        myObj.close();
 
         System.out.println("Name is: " + userName);
         System.out.println("Age is: " + userAge);
