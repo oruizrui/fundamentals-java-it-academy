@@ -31,28 +31,13 @@ public class Main {
         String response = "error";
         Boolean askAgain = true;
 
-        System.out.println("1cheeeker----------");
-        System.out.println(response);
-        System.out.println(askAgain);
-        System.out.println("----------");
-
         for (int i = 0; (i < 5) && askAgain; i++) {
             response = scanner.nextLine();
 
             if (responseIsValid(response) == true) {
                 askAgain = false;
-
-                System.out.println("2cheeeker----------");
-                System.out.println(response);
-                System.out.println(askAgain);
-                System.out.println("----------");
                 break;
             } else {
-                System.out.println("3cheeeker----------");
-                System.out.println(response);
-                System.out.println(askAgain);
-                System.out.println("----------");
-
                 System.out.println("Invalid response. Must be yes / no.");
             }
         }
