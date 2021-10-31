@@ -6,9 +6,9 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner myObj = new Scanner(System.in);
-        double firstNumber = 0.0;
-        double secondNumber = 0.0;
-        double mathResult = 0.0;
+        Double firstNumber = 0.0;
+        Double secondNumber = 0.0;
+        Double mathResult = 0.0;
         String operator = "";
 
         // Enter username and press Enter
@@ -16,6 +16,7 @@ public class Main {
         firstNumber = myObj.nextDouble();
         System.out.println("Could you give me another number?");
         secondNumber = myObj.nextDouble();
+        myObj.nextLine();
         System.out.println("Could you give an operator? (+, -, * or /)");
         operator = myObj.nextLine();
         myObj.close();
@@ -36,11 +37,11 @@ public class Main {
             case "/":
                 mathResult = firstNumber / secondNumber;
                 break;
+            default:
+                System.out.println("no operator matched");
             }
-            System.out.println(firstNumber + operator + secondNumber);
+            System.out.println(firstNumber + " " + operator + " " + secondNumber + ":");
             System.out.println(mathResult);
         }
-
     }
-
 }
