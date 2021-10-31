@@ -5,7 +5,7 @@ import java.util.Scanner; // import the Scanner class
 public class Main {
 
     public static void main(String[] args) {
-        Scanner myObj = new Scanner(System.in);
+        Scanner myScan = new Scanner(System.in);
         Double firstNumber = 0.0;
         Double secondNumber = 0.0;
         Double mathResult = 0.0;
@@ -13,13 +13,13 @@ public class Main {
 
         // Enter username and press Enter
         System.out.println("Could you give me a number?");
-        firstNumber = myObj.nextDouble();
+        firstNumber = myScan.nextDouble();
         System.out.println("Could you give me another number?");
-        secondNumber = myObj.nextDouble();
-        myObj.nextLine();
+        secondNumber = myScan.nextDouble();
+        myScan.nextLine();
         System.out.println("Could you give an operator? (+, -, * or /)");
-        operator = myObj.nextLine();
-        myObj.close();
+        operator = myScan.nextLine();
+        myScan.close();
 
         if (operator == "/" && secondNumber == 0) {
             System.out.println("I cant divide by 0");

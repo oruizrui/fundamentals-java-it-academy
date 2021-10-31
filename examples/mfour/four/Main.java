@@ -4,13 +4,13 @@ import java.util.Scanner; // import the Scanner class
 
 public class Main {
     public static void main(String[] args) {
-        Scanner myObj = new Scanner(System.in);
+        Scanner myScan = new Scanner(System.in);
         int monthAsString = 0;
         String message = "Invalid day";
         // Enter username and press Enter
         System.out.println("Could you give me a month, please? (1, 2, 3, etc.)");
-        monthAsString = myObj.nextInt();
-        myObj.close();
+        monthAsString = myScan.nextInt();
+        myScan.close();
 
         message = switchCaseImpl(monthAsString, message);
         System.out.println(message);

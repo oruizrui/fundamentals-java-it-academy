@@ -4,16 +4,16 @@ import java.util.Scanner; // import the Scanner class
 
 public class Main {
     public static void main(String[] args) {
-        Scanner myObj = new Scanner(System.in);
+        Scanner myScan = new Scanner(System.in);
         int integerFirst = 0;
         int integerSecond = 0;
 
         // Enter inputs and press Enter
         System.out.println("Could you give me a number (integer), please?");
-        integerFirst = myObj.nextInt();
+        integerFirst = myScan.nextInt();
         System.out.println("Could you give me another number (integer), please?");
-        integerSecond = myObj.nextInt();
-        myObj.close();
+        integerSecond = myScan.nextInt();
+        myScan.close();
 
         System.out.println("Thanks!, Lets operate with them");
         System.out.println("El resultat de la suma és: " + (integerFirst + integerSecond));

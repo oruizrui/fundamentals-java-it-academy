@@ -4,22 +4,22 @@ import java.util.Scanner; // import the Scanner class
 
 public class Main {
     public static void main(String[] args) {
-        Scanner myObj = new Scanner(System.in);
+        Scanner myScan = new Scanner(System.in);
         int userAge = 0;
         String userStudies = "error";
         String userWork = "error";
 
         // Enter username and press Enter
         System.out.println("Could you give me your age, please?");
-        userAge = myObj.nextInt();
-        myObj.nextLine();
+        userAge = myScan.nextInt();
+        myScan.nextLine();
         System.out.println("Do you have university studies? (yes/no)");
-        userStudies = handleUserResponseYesNo(myObj);
+        userStudies = handleUserResponseYesNo(myScan);
 
         System.out.println("Do you have work? (yes/no)");
-        userWork = handleUserResponseYesNo(myObj);
+        userWork = handleUserResponseYesNo(myScan);
 
-        myObj.close();
+        myScan.close();
 
         if ((userAge >= 18 && userStudies.equals("yes")) || userWork.equals("no")) {
             System.out.println("Your beca has been approved.");

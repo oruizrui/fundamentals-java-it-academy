@@ -4,13 +4,13 @@ import java.util.Scanner; // import the Scanner class
 
 public class Main {
     public static void main(String[] args) {
-        Scanner myObj = new Scanner(System.in);
+        Scanner myScan = new Scanner(System.in);
         int userAge = 0;
 
         // Enter username and press Enter
         System.out.println("Could you give me your age, please?");
-        userAge = myObj.nextInt();
-        myObj.close();
+        userAge = myScan.nextInt();
+        myScan.close();
 
         System.out.println(messageForAge(userAge));
     }
