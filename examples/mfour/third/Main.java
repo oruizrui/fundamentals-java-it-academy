@@ -32,6 +32,7 @@ public class Main {
         Boolean askAgain = true;
 
         for (int i = 0; (i < 5) && askAgain; i++) {
+            System.out.println("iteration: " + i);
             response = scanner.nextLine();
 
             if (responseIsValid(response) == true) {
