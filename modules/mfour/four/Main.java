@@ -1,4 +1,4 @@
-package examples.mfour.four;
+package modules.mfour.four;
 
 import java.util.Scanner; // import the Scanner class 
 

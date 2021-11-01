@@ -1,4 +1,4 @@
-package examples.msixth.second;
+package modules.msixth.second;
 
 import java.util.Scanner; // import the Scanner class 
 

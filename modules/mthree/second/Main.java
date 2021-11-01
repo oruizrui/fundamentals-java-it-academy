@@ -1,4 +1,4 @@
-package examples.mthree.second;
+package modules.mthree.second;
 
 import java.util.Scanner; // import the Scanner class 
 

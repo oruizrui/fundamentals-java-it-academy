@@ -1,4 +1,4 @@
-package examples.mfour.sixth;
+package modules.mfour.sixth;
 
 import java.util.Scanner; // import the Scanner class 
 import java.text.ParseException;

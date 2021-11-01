@@ -1,4 +1,4 @@
-package examples.mfour.fifth;
+package modules.msixth.first;
 
 import java.util.Scanner; // import the Scanner class 
 
@@ -17,7 +17,7 @@ public class Main {
         System.out.println("Could you give me another number?");
         secondNumber = myScan.nextDouble();
         myScan.nextLine();
-        System.out.println("Could you give an operator? (+, -, * or /)");
+        System.out.println("Could you give an operator? (+, -, *, / or %)");
         operator = myScan.nextLine();
         myScan.close();
 
@@ -26,16 +26,19 @@ public class Main {
         } else {
             switch (operator) {
             case "+":
-                mathResult = firstNumber + secondNumber;
+                mathResult = addition(firstNumber, secondNumber);
                 break;
             case "-":
-                mathResult = firstNumber - secondNumber;
+                mathResult = subtraction(firstNumber, secondNumber);
                 break;
             case "*":
-                mathResult = firstNumber * secondNumber;
+                mathResult = multiplication(firstNumber, secondNumber);
                 break;
             case "/":
-                mathResult = firstNumber / secondNumber;
+                mathResult = division(firstNumber, secondNumber);
+                break;
+            case "%":
+                mathResult = module(firstNumber, secondNumber);
                 break;
             default:
                 System.out.println("no operator matched");
@@ -43,5 +46,25 @@ public class Main {
             System.out.println(firstNumber + " " + operator + " " + secondNumber + ":");
             System.out.println(mathResult);
         }
+    }
+
+    private static Double addition(Double num1, Double num2) {
+        return num1 + num2;
+    }
+
+    private static Double subtraction(Double num1, Double num2) {
+        return num1 - num2;
+    }
+
+    private static Double multiplication(Double num1, Double num2) {
+        return num1 * num2;
+    }
+
+    private static Double division(Double num1, Double num2) {
+        return num1 / num2;
+    }
+
+    private static Double module(Double num1, Double num2) {
+        return num1 % num2;
     }
 }
