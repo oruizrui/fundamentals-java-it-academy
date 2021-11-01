@@ -9,12 +9,12 @@ Eines necessàries: Tenir instal·lat l'entorn de programació Eclipse juntament
 
 Llenguatge utilitzat: Per dur a terme el curs el llenguatge escollit és Java.
 
-Objectius del curs:
-Aprendre la sintaxi bàsica de Java
-Treballar amb variables i constants
-Aprendre el funcionament de les estructures condicionals
-Aprendre com funcionen els arrays
-Utilitzar els diferents tipus de bucles i saber quin és més oportú en cada cas
-Utilitzar iteradors
-Treballar amb mètodes i funcions
-Entendre i ser capaç de programar amb POO
+**Objectius del curs:**
+* Aprendre la sintaxi bàsica de Java
+* Treballar amb variables i constants
+* Aprendre el funcionament de les estructures condicionals
+* Aprendre com funcionen els arrays
+* Utilitzar els diferents tipus de bucles i saber quin és més oportú en cada cas
+* Utilitzar iteradors
+* Treballar amb mètodes i funcions
+* Entendre i ser capaç de programar amb POO
