@@ -1,4 +1,4 @@
-package base.scanner;
+package src.base.scanner;
 
 public class ScannnString extends Scann {
 

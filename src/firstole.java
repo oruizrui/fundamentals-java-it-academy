@@ -1,4 +1,4 @@
-package examples.mthree;
+package src;
 
 import base.scanner.Scann;
 import base.scanner.ScannnString;

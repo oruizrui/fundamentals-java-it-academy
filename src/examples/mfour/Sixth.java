@@ -1,4 +1,4 @@
-package modules.mfour.sixth;
+package src.examples.mfour;
 
 import java.util.Scanner; // import the Scanner class 
 import java.text.ParseException;
@@ -7,7 +7,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
-public class Main {
+public class Sixth {
 
     public static void main(String[] args) {
         Scanner myScan = new Scanner(System.in);

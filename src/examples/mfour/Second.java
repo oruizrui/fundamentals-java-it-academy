@@ -1,8 +1,8 @@
-package modules.mfour.second;
+package src.examples.mfour;
 
 import java.util.Scanner; // import the Scanner class 
 
-public class Main {
+public class Second {
     public static void main(String[] args) {
         Scanner myScan = new Scanner(System.in);
         int userAge = 0;

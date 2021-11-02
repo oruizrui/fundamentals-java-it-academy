@@ -1,8 +1,8 @@
-package modules.mfour.fifth;
+package src.examples.mfour;
 
 import java.util.Scanner; // import the Scanner class 
 
-public class Main {
+public class Fifth {
 
     public static void main(String[] args) {
         Scanner myScan = new Scanner(System.in);
