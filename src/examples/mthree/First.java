@@ -1,9 +1,8 @@
-package src;
+package src.examples.mthree;
 
-import base.scanner.Scann;
-import base.scanner.ScannnString;
+import src.base.scanner.ScannnString;
 
-public class first {
+public class First {
 
     public static void main(String[] args) {
         String userName = "";

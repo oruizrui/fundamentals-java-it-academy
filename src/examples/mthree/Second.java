@@ -1,19 +1,19 @@
-package modules.mthree.second;
+package src.examples.mthree;
 
-import java.util.Scanner; // import the Scanner class 
+import src.base.scanner.ScannInteger;
 
-public class Main {
+public class Second {
     public static void main(String[] args) {
-        Scanner myScan = new Scanner(System.in);
         int integerFirst = 0;
         int integerSecond = 0;
 
         // Enter inputs and press Enter
         System.out.println("Could you give me a number (integer), please?");
-        integerFirst = myScan.nextInt();
+        integerFirst = ScannInteger.scann();
         System.out.println("Could you give me another number (integer), please?");
-        integerSecond = myScan.nextInt();
-        myScan.close();
+        integerSecond = ScannInteger.scann();
+
+        ScannInteger.close();
 
         System.out.println("Thanks!, Lets operate with them");
         System.out.println("El resultat de la suma és: " + (integerFirst + integerSecond));
