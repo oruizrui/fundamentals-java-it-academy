@@ -1,3 +1,4 @@
+package modules.mthree;
 
 import java.util.Scanner; // import the Scanner class 
 
