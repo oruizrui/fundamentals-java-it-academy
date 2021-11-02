@@ -1,3 +1,14 @@
+/* 
+(M3) Exercici 2
+
+Fer un programa que li demani dos números enters  a l’usuari. Al final, el programa imprimeix per pantalla el següent missatge: 
+
+El resultat de la suma és: “valor”
+El resultat de la resta és: “valor”
+El resultat de la multiplicació és: “valor”
+El resultat de la divisió és: “valor”.
+*/
+
 package modules.mthree;
 
 import java.util.Scanner; // import the Scanner class 

@@ -1,3 +1,10 @@
+/* 
+(M3) Exercici 1
+
+Fer un programa que li demani a l’usuari: El nom, el cognom i l’edat.
+Un cop l’usuari hagi acabat d’introduir les dades, aquestes s’han de mostrar per pantalla.
+*/
+
 package modules.mthree;
 
 import java.util.Scanner; // import the Scanner class 
