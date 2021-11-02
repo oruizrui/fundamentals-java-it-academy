@@ -1,26 +1,22 @@
-package modules.mfour.first;
+package modules.mthree;
 
 import java.util.Scanner; // import the Scanner class 
 
-public class Main {
+public class First {
     public static void main(String[] args) {
         Scanner myScan = new Scanner(System.in);
         String userName = "";
-        int userAge = 0;
-        String tag = "MAJOR";
+        String userAge = "";
 
         // Enter username and press Enter
         System.out.println("Could you give me your name and first name, please?");
         userName = myScan.nextLine();
 
         System.out.println("Could you give me your age, please?");
-        userAge = myScan.nextInt();
+        userAge = myScan.nextLine();
         myScan.close();
 
-        if (userAge < 18) {
-            tag = "MENOR";
-        }
-
-        System.out.println(userName + " ets " + tag + " d'edad");
+        System.out.println("Name is: " + userName);
+        System.out.println("Age is: " + userAge);
     }
 }

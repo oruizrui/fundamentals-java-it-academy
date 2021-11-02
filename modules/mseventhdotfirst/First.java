@@ -1,8 +1,8 @@
-package modules.mseventhdotfirst.first;
+package modules.mseventhdotfirst;
 
 import java.util.Scanner; // import the Scanner class 
 
-public class Main {
+public class First {
     public static void main(String[] args) {
         Scanner myScan = new Scanner(System.in);
         Double[] intArray = new Double[3];

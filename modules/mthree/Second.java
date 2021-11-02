@@ -1,8 +1,8 @@
-package modules.mthree.second;
+package modules.mthree;
 
 import java.util.Scanner; // import the Scanner class 
 
-public class Main {
+public class Second {
     public static void main(String[] args) {
         Scanner myScan = new Scanner(System.in);
         int integerFirst = 0;

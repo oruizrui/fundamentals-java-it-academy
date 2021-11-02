@@ -1,8 +1,8 @@
-package modules.mseventhdotfirst.second;
+package modules.mseventhdotfirst;
 
 import java.util.Scanner; // import the Scanner class 
 
-public class Main {
+public class Second {
     public static void main(String[] args) {
         Scanner myScan = new Scanner(System.in);
         Double average = 0.0;
