@@ -13,21 +13,21 @@ import java.util.Scanner; // import the Scanner class
 public class Three {
     public static void main(String[] args) {
         Scanner myScan = new Scanner(System.in);
-        int[] intArray = new int[3];
-        int sumArray = 0;
+        ArrayList<Integer> scores = new ArrayList<Integer>();
+        Integer sumArray = 0;
 
         System.out.println("Could you give me a score?");
-        intArray[0] = myScan.nextInt();
+        scores.add(myScan.nextInt());
         System.out.println("Could you give me an other score?");
-        intArray[1] = myScan.nextInt();
+        scores.add(myScan.nextInt());
         System.out.println("Could you give me the last score?");
-        intArray[2] = myScan.nextInt();
+        scores.add(myScan.nextInt());
         myScan.close();
 
-        for (int i = 0; i < intArray.length; i++) {
-            sumArray = (sumArray + intArray[i]);
+        for (int i = 0; i < scores.size(); i++) {
+            sumArray = (sumArray + scores.get(i));
         }
 
-        System.out.println("Your average score is: " + ((double) sumArray / intArray.length));
+        System.out.println("Your average score is: " + ((double) sumArray / scores.size()));
     }
 }
