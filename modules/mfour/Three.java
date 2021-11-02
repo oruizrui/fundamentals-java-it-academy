@@ -1,5 +1,9 @@
 /* 
+(M4) Exercici 3
 
+Una escola d’idiomes concedeix beques a futurs estudiants si compleixen una sèrie de requisits.
+A l'alumne se li assigna una beca si és major d’edat i si té un títol universitari. O també se li assigna una beca si l’alumne està a l’atur. 
+El programa demana les tres dades per pantalla i en finalitzar mostra si l’alumne té la beca o no.
 */
 
 package modules.mfour;

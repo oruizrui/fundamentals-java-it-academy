@@ -1,5 +1,9 @@
 /* 
+(M4) Exercici 4
 
+L’usuari introdueix un mes per pantalla i mitjançant un switch amb els 12 mesos de l’any, el programa calcula els dies del mes i mostra el següent: 
+
+Exemple: Si el número introduït és 1, llavors ha d'aparèixer per pantalla: “El mes de gener té 31 dies”
 */
 
 package modules.mfour;

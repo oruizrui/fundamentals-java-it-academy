@@ -3,7 +3,6 @@
 El programa demana a l'usuari que introdueixi 3 notes i el programa mostra la mitjana de les 3 notes per pantalla.
 
 *Les notes que introdueix l'usuari són números enters però la mitja pot tenir decimals.
-
 */
 
 package modules.mthree;
@@ -16,8 +15,6 @@ public class Three {
         Scanner myScan = new Scanner(System.in);
         int[] intArray = new int[3];
         int sumArray = 0;
-
-        ArrayList
 
         System.out.println("Could you give me a score?");
         intArray[0] = myScan.nextInt();

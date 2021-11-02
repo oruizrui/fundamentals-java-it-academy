@@ -1,5 +1,9 @@
 /* 
+(M4) Exercici 1
+Modifica l’exercici 1 del mòdul 3. Un cop introduïdes les dades, el programa ha de mostrar el següent per pantalla:
 
+- Si l’usuari té 18 anys o més: “Nom Cognom, ets MAJOR d’edat” 
+- Si l’usuari és menor de 18 anys: “Nom Cognom, ets MENOR d’edat”.
 */
 
 package modules.mfour;

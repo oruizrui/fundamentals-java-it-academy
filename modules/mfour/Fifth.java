@@ -1,5 +1,8 @@
 /* 
+(M4) Exercici 5
 
+Fer un programa que demani dos números i un operador(+,-,*,/).
+Al final, el programa ha d'imprimir per pantalla el resultat de fer l’operació que contingui la variable operador.
 */
 
 package modules.mfour;

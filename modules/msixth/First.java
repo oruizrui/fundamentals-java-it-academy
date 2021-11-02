@@ -1,5 +1,7 @@
 /* 
-
+(M6) Exercici 1
+Calculadora arcaica. El programa demana a l’usuari que introdueixi dos números i l’operació que desitja realitzar. 
+Cada operació (suma, resta, multiplicació, divisió i mòdul) estarà programada en una funció diferent.
 */
 
 package modules.msixth;
