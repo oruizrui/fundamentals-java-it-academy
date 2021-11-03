@@ -1,43 +1,53 @@
 /* 
-Aquest programa li demana l’edat a l’usuari, en funció d’aquesta, mostrarem un dels següents missatges per pantalla:
+(M5) Exercici 2
 
-Si té 5 anys o menys: preescolar
-Si té entre 6 i 11 anys: primària
-Si té entre 12 i 15: ESO
-Si té entre 16 i 17: Batxillerat
-Si és major d'edat: FP o Universitat
+El programa demana dos números enters i llavors calcula la suma dels valors compresos entre els dos números, inclosos. 
+
+Exemple: 4 i 6  --> resultat = 4 + 5 + 6 = 15
 */
 
 package modules.mfifth;
 
+import java.util.ArrayList;
 import java.util.Scanner; // import the Scanner class 
+import java.util.stream.Collectors;
 
 public class Second {
+
     public static void main(String[] args) {
         Scanner myScan = new Scanner(System.in);
-        int userAge = 0;
+        Integer firstNumber = 0;
+        Integer secondNumber = 1;
+        String str = "";
+        ArrayList<Integer> numbers = new ArrayList<Integer>();
+        ArrayList<String> stringNumbers = new ArrayList<String>();
+        Integer numbersSum = 1;
 
         // Enter username and press Enter
-        System.out.println("Could you give me your age, please?");
-        userAge = myScan.nextInt();
+        System.out.println("Could you give me a number?");
+        firstNumber = myScan.nextInt();
+        System.out.println("Could you give me a another?");
+        secondNumber = myScan.nextInt();
         myScan.close();
 
-        System.out.println(messageForAge(userAge));
-    }
-
-    private static String messageForAge(int age) {
-        String output = "";
-
-        if (age <= 5) {
-            output = "preescolar";
-        } else if (age <= 11) {
-            output = "primaria";
-        } else if (age <= 16) {
-            output = "ESO";
-        } else {
-            output = "FP o Universitat";
+        if (firstNumber <= secondNumber) {
+            for (int i = firstNumber; i <= secondNumber; i++) {
+                numbers.add(i);
+            }
+        } else if (firstNumber > secondNumber) {
+            for (int i = firstNumber; i >= secondNumber; i--) {
+                numbers.add(i);
+            }
         }
 
-        return output;
+        for (int i = 0; i < numbers.size(); i++) {
+            stringNumbers.add(numbers.get(i).toString());
+            numbersSum = numbersSum + numbers.get(i);
+        }
+
+        System.out.println("print numbers sum");
+        str = stringNumbers.stream().collect(Collectors.joining(" + "));
+        System.out.println(str + " = " + numbersSum);
     }
+
 }
