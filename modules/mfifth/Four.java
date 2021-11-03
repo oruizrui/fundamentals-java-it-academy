@@ -27,6 +27,7 @@ public class Four {
             }
             attemp++;
         }
+        myScan.close();
 
         if (askAgain == true) {
             System.out.println("You don't have more attempts. the number was " + randomInteger);

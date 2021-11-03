@@ -21,6 +21,7 @@ public class Three {
             System.out.println("Could you found the hidden number? (between 0 - 10)");
             givedInteger = myScan.nextInt();
         }
+        myScan.close();
 
         System.out.println("Congrats, the number was " + randomInteger);
     }
