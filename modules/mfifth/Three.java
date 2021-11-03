@@ -1,9 +1,10 @@
 /* 
-(M4) Exercici 3
+(M5) Exercici 3
 
-Una escola d’idiomes concedeix beques a futurs estudiants si compleixen una sèrie de requisits.
-A l'alumne se li assigna una beca si és major d’edat i si té un títol universitari. O també se li assigna una beca si l’alumne està a l’atur. 
-El programa demana les tres dades per pantalla i en finalitzar mostra si l’alumne té la beca o no.
+Aquesta línia de codi: Math.ceil((Math.random() * 10));  Retorna un número entre el 0 i el 10 de forma aleatòria.
+L’exercici consisteix a què l’usuari ha d'endevinar el número escollit aleatòriament pel programa.
+El programa, demana números a l’usuari fins que aquest encerti el número aleatori generat pel programa.
+Un cop l’usuari ha endevinat el número, es mostrarà per pantalla el següent missatge: “Enhorabona, el número era X”
 */
 
 package modules.mfifth;
@@ -13,48 +14,14 @@ import java.util.Scanner; // import the Scanner class
 public class Three {
     public static void main(String[] args) {
         Scanner myScan = new Scanner(System.in);
-        int userAge = 0;
-        String userStudies = "error";
-        String userWork = "error";
+        int randomInteger = (int) (Math.random() * (10));
+        int givedInteger = 11;
 
-        // Enter username and press Enter
-        System.out.println("Could you give me your age, please?");
-        userAge = myScan.nextInt();
-        myScan.nextLine();
-        System.out.println("Do you have university studies? (yes/no)");
-        userStudies = handleUserResponseYesNo(myScan);
-
-        System.out.println("Do you have work? (yes/no)");
-        userWork = handleUserResponseYesNo(myScan);
-
-        myScan.close();
-
-        if ((userAge >= 18 && userStudies.equals("yes")) || userWork.equals("no")) {
-            System.out.println("Your beca has been approved.");
-        } else {
-            System.out.println("You dont fit on the requirements to get a beca.");
-        }
-    }
-
-    private static String handleUserResponseYesNo(Scanner scanner) {
-        String response = "error";
-        Boolean askAgain = true;
-
-        for (int i = 0; (i < 5) && askAgain; i++) {
-            response = scanner.nextLine();
-
-            if (responseIsValid(response) == true) {
-                askAgain = false;
-                break;
-            } else {
-                System.out.println("Invalid response. Must be yes / no.");
-            }
+        while (randomInteger != givedInteger) {
+            System.out.println("Could you found the hidden number? (between 0 - 10)");
+            givedInteger = myScan.nextInt();
         }
 
-        return response;
-    }
-
-    private static boolean responseIsValid(String str) {
-        return str.equals("yes") || str.equals("no");
+        System.out.println("Congrats, the number was " + randomInteger);
     }
 }
