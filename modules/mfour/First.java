@@ -17,7 +17,6 @@ public class First {
         int userAge = 0;
         String tag = "MAJOR";
 
-        // Enter username and press Enter
         System.out.println("Could you give me your name and first name, please?");
         userName = myScan.nextLine();
 

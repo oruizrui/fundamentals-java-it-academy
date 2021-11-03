@@ -17,7 +17,6 @@ public class Three {
         String userStudies = "error";
         String userWork = "error";
 
-        // Enter username and press Enter
         System.out.println("Could you give me your age, please?");
         userAge = myScan.nextInt();
         myScan.nextLine();

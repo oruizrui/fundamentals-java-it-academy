@@ -15,7 +15,6 @@ public class First {
         String userName = "";
         String userAge = "";
 
-        // Enter username and press Enter
         System.out.println("Could you give me your name and first name, please?");
         userName = myScan.nextLine();
 

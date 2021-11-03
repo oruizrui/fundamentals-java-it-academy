@@ -17,7 +17,6 @@ public class Second {
         Scanner myScan = new Scanner(System.in);
         int userAge = 0;
 
-        // Enter username and press Enter
         System.out.println("Could you give me your age, please?");
         userAge = myScan.nextInt();
         myScan.close();

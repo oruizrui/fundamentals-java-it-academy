@@ -23,7 +23,6 @@ public class Second {
         ArrayList<String> stringNumbers = new ArrayList<String>();
         Integer numbersSum = 1;
 
-        // Enter username and press Enter
         System.out.println("Could you give me a number?");
         firstNumber = myScan.nextInt();
         System.out.println("Could you give me a another?");

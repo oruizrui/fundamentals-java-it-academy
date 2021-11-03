@@ -15,7 +15,7 @@ public class Four {
         Scanner myScan = new Scanner(System.in);
         int monthAsString = 0;
         String message = "Invalid day";
-        // Enter username and press Enter
+
         System.out.println("Could you give me a month, please? (1, 2, 3, etc.)");
         monthAsString = myScan.nextInt();
         myScan.close();

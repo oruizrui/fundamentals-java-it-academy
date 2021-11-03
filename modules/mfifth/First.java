@@ -8,7 +8,6 @@ public class First {
         Scanner myScan = new Scanner(System.in);
         ArrayList<String> words = new ArrayList<String>();
 
-        // Enter username and press Enter
         System.out.println("Could you give me a word?");
         words.add(myScan.nextLine());
         System.out.println("Could you give me an other word?");

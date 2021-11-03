@@ -18,7 +18,6 @@ public class Fifth {
         Double mathResult = 0.0;
         String operator = "";
 
-        // Enter username and press Enter
         System.out.println("Could you give me a number?");
         firstNumber = myScan.nextDouble();
         System.out.println("Could you give me another number?");
