@@ -7,27 +7,26 @@ El programa demana a l'usuari que introdueixi 3 notes i el programa mostra la mi
 
 package modules.mthree;
 
-import java.util.ArrayList;
 import java.util.Scanner; // import the Scanner class 
 
 public class Three {
     public static void main(String[] args) {
         Scanner myScan = new Scanner(System.in);
-        ArrayList<Integer> scores = new ArrayList<Integer>();
-        Integer sumArray = 0;
+        int[] intArray = new int[3];
+        int sumArray = 0;
 
         System.out.println("Could you give me a score?");
-        scores.add(myScan.nextInt());
+        intArray[0] = myScan.nextInt();
         System.out.println("Could you give me an other score?");
-        scores.add(myScan.nextInt());
+        intArray[1] = myScan.nextInt();
         System.out.println("Could you give me the last score?");
-        scores.add(myScan.nextInt());
+        intArray[2] = myScan.nextInt();
         myScan.close();
 
-        for (int i = 0; i < scores.size(); i++) {
-            sumArray = (sumArray + scores.get(i));
+        for (int i = 0; i < intArray.length; i++) {
+            sumArray = (sumArray + intArray[i]);
         }
 
-        System.out.println("Your average score is: " + ((double) sumArray / scores.size()));
+        System.out.println("Your average score is: " + ((double) sumArray / intArray.length));
     }
 }
