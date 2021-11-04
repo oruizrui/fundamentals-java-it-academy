@@ -23,6 +23,7 @@ public class Sixth {
 
         System.out.println("Give me a number");
         number = myScan.nextInt();
+        myScan.close();
 
         System.out.println("---");
         for (int i = 1; i <= 10; i++) {
