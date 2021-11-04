@@ -1,34 +1,27 @@
 /* 
-(M7.1.) Exercici 5
-
-Mostra per pantalla els nombres parells compresos entre el 100 i el 0 en ordre descendent.
+(M7.2.) Exercici 5
+L’usuari introdueix un nombre per teclat i el programa imprimeix per pantalla si el nombre és primer o no
 */
 
 package modules.mseventhdotsecond;
 
 import java.util.ArrayList;
-import java.util.Collections;
+import java.util.Scanner;
 
 public class Fifth {
     public static void main(String[] args) {
-        ArrayList<Integer> pairs = new ArrayList<Integer>();
-        int startAt = 0;
-        int endAt = 100;
+        Scanner myScan = new Scanner(System.in);
+        int number = 0;
 
-        pairs = findPairsBetween(pairs, startAt, endAt);
-        Collections.sort(pairs, Collections.reverseOrder());
+        System.out.println("number to check if is prime");
+        number = myScan.nextInt();
+        myScan.close();
 
-        System.out.println(pairs);
+        checkPrime(number);
     }
 
-    private static ArrayList<Integer> findPairsBetween(ArrayList<Integer> arr, int startAt, int endAt) {
-        for (int i = startAt; i <= endAt; i++) {
-            if (i % 2 == 0) {
-                arr.add(i);
-            }
-        }
-
-        return arr;
+    private static void checkPrime(Integer number) {
+        Boolean prime = false;
+        // https://www.javatpoint.com/prime-number-program-in-java
     }
-
 }

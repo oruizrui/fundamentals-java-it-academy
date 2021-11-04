@@ -1,7 +1,6 @@
 /* 
-(M7.1.) Exercici 4
-
-L’usuari ha d’introduir dos números, el programa retornarà “Un dels dos números és negatiu”, només si un dels dos números és negatiu.
+(M7.2.) Exercici 4
+Realitzar un programa on l’usuari introdueix un número i el programa li retorna el factorial del número introduit
 */
 
 package modules.mseventhdotsecond;
@@ -11,23 +10,18 @@ import java.util.Scanner; // import the Scanner class
 public class Four {
     public static void main(String[] args) {
         Scanner myScan = new Scanner(System.in);
-        int firstNumber;
-        int secondNumber;
+        int number;
+        int factorial = 1;
 
         System.out.println("Could you give me a number?");
-        firstNumber = myScan.nextInt();
-        System.out.println("Could you give me a another?");
-        secondNumber = myScan.nextInt();
+        number = myScan.nextInt();
         myScan.close();
 
-        if (justOneNegative(firstNumber, secondNumber) || justOneNegative(secondNumber, firstNumber)) {
-            System.out.println("one of them is negative");
+        while (number != 0) {
+            factorial = factorial * number;
+            number--;
         }
 
-        System.out.println("thanks!");
-    }
-
-    private static Boolean justOneNegative(int first, int second) {
-        return (first < 0 && second >= 0);
+        System.out.println(factorial);
     }
 }
