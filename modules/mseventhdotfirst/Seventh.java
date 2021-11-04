@@ -27,6 +27,7 @@ public class Seventh {
         character = myScan.nextLine();
         System.out.println("size of square");
         size = myScan.nextInt();
+        myScan.close();
 
         printSquare(character, size);
     }
