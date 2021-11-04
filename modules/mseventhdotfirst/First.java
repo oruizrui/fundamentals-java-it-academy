@@ -1,5 +1,9 @@
 /* 
+(M7.1.) Exercici 1
 
+(M7.1.) Exercici 1
+
+Crea un programa on l’usuari introdueix tres notes i el programa calcula la mitja. Si la mitja és inferior a 5 ha de mostrar el següent missatge per pantalla: “No has superat el curs. Has de recuperar”, si la mitja està entre 5 i 7 ha de mostrar: “Enhorabona! Has aprovat però hauries de seguir practicant”, si la mitja és superior a 7 ha de mostrar: ”Enhorabona! Has superat el curs! Passa ja al següent nivell!
 */
 
 package modules.mseventhdotfirst;

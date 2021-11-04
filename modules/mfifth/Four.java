@@ -1,9 +1,9 @@
 /* 
-(M4) Exercici 4
+(M5) Exercici 4
 
-L’usuari introdueix un mes per pantalla i mitjançant un switch amb els 12 mesos de l’any, el programa calcula els dies del mes i mostra el següent: 
-
-Exemple: Si el número introduït és 1, llavors ha d'aparèixer per pantalla: “El mes de gener té 31 dies”
+Has de modificar el programa anterior per afegir una nova funcionalitat: establir un número màxim de 5 intents.
+Si l’usuari encerta el número escollit pel programa abans d'aquests 5 intents, el programa mostra el següent missatge per pantalla: “Enhorabona, el número és X i has necessitat Y intents per encertar-lo”.
+Si no encerta el número abans de 5 intents, el programa mostra per pentalla: "Has utilitzat massa intents! El número és X ".
 */
 
 package modules.mfifth;
