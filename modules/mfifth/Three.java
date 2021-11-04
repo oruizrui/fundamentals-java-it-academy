@@ -14,8 +14,8 @@ import java.util.Scanner; // import the Scanner class
 public class Three {
     public static void main(String[] args) {
         Scanner myScan = new Scanner(System.in);
-        int randomInteger = (int) (Math.random() * (10));
-        int givedInteger = 11;
+        int randomInteger = (int) (Math.random() * (11));
+        int givedInteger = 1;
 
         while (randomInteger != givedInteger) {
             System.out.println("Could you found the hidden number? (between 0 - 10)");
