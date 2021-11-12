@@ -5,7 +5,6 @@ L’usuari introdueix un nombre per teclat i el programa imprimeix per pantalla 
 
 package modules.mseventhdotsecond;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Fifth {
@@ -17,11 +16,33 @@ public class Fifth {
         number = myScan.nextInt();
         myScan.close();
 
-        checkPrime(number);
+        if (checkPrime(number) == true) {
+            System.out.println(number + " is prime number");
+        } else {
+            System.out.println(number + " is not prime number");
+        }
     }
 
-    private static void checkPrime(Integer number) {
-        Boolean prime = false;
-        // https://www.javatpoint.com/prime-number-program-in-java
+    private static Boolean checkPrime(Integer number) {
+        // https://www.mathematical.com/primes0to1000k.html
+        if (number <= 1) {
+            return false;
+        }
+        if (number <= 3) {
+            return true;
+        }
+
+        if (number % 2 == 0 || number % 3 == 0) {
+            return false;
+        }
+
+        for (int i = 5; i * i <= number; i = i + 6) {
+            if (number % i == 0 || number % (i + 2) == 0) {
+                return false;
+            }
+
+        }
+
+        return true;
     }
 }

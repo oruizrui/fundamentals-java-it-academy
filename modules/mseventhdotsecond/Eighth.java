@@ -1,7 +1,13 @@
 /* 
-(M7.1.) Exercici 8
+(M7.2.) Exercici 8
 
-Crea un programa on l’usuari introdueixi una temperatura en ºC i es mostri per pantalla la conversió en ºFahrenheit
+L’usuari introdueix un nombre per teclat i el programa crida a un mètode que ha de mostrar la successió de Fibonacci.
+
+Exemple:
+
+Si l’usuari introdueix el 10 el resultat ha de ser:
+
+0,1,1,2,3,5,8,13,21,34
 */
 
 package modules.mseventhdotsecond;
@@ -11,16 +17,23 @@ import java.util.Scanner; // import the Scanner class
 public class Eighth {
     public static void main(String[] args) {
         Scanner myScan = new Scanner(System.in);
-        Double degree = 0.0;
+        int maxNumber = 10;
+        int previousNumber = 0;
+        int nextNumber = 1;
 
-        System.out.println("Celcius degrees");
-        degree = myScan.nextDouble();
+        System.out.println("give me a number");
+        maxNumber = myScan.nextInt();
         myScan.close();
 
-        System.out.println(degree + " °C are " + celciusToFahrenheit(degree) + " °F");
-    }
+        System.out.print("Fibonacci Series of " + maxNumber + " numbers:");
+        System.out.println("");
+        for (int i = 1; i <= maxNumber; ++i) {
+            System.out.print(previousNumber + " ");
 
-    private static Double celciusToFahrenheit(Double temperature) {
-        return (temperature * 9 / 5) + 32;
+            int sum = previousNumber + nextNumber;
+            previousNumber = nextNumber;
+            nextNumber = sum;
+        }
+        System.out.println("");
     }
 }
