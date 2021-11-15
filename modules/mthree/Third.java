@@ -9,7 +9,7 @@ package modules.mthree;
 
 import java.util.Scanner; // import the Scanner class 
 
-public class Three {
+public class Third {
     public static void main(String[] args) {
         Scanner myScan = new Scanner(System.in);
         int[] intArray = new int[3];

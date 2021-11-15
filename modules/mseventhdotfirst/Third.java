@@ -7,7 +7,7 @@ package modules.mseventhdotfirst;
 
 import java.util.Scanner; // import the Scanner class 
 
-public class Three {
+public class Third {
     public static void main(String[] args) {
         Scanner myScan = new Scanner(System.in);
         int number;
